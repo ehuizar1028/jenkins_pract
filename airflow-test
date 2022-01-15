@@ -5,7 +5,7 @@ pipeline {
             steps {
                 echo "Hello World!"
                 sh "echo Hello from the shell"
-                sh "hostname"
+                echo scm.branches[0].name
             }
         }
     }
